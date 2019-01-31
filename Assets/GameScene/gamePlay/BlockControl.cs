@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Block
 {
     public static float COLLISION_SIZE = 1.0f; // 블록의 충돌크기
@@ -15,11 +16,7 @@ public class Block
     public enum COLOR
     {
         NONE = -1,
-        pink = 0, blue, yellow, green, magenta, orange, gray,
-        NUM,
-        FIRST = pink,
-        LAST = orange,
-        NORMAL_COLOR_NUM = gray,
+        pink = 0, blue, yellow, green, magenta, cyan, gray,
     };
 
     public enum DIR4
@@ -37,12 +34,14 @@ public class Block
         NUM,
     }
 
-    public static int BLOCK_NUM_X = 9;
-    public static int BLOCK_NUM_Y = 9;
+    public static int BLOCK_NUM_X = SizeManager.mapSize;
+    public static int BLOCK_NUM_Y = SizeManager.mapSize;
 }
 
 public class BlockControl : MonoBehaviour
 {
+    public SizeManager setting;
+
     public Block.COLOR color = (Block.COLOR)0;
     public BlockRoot block_root = null;
     public Block.iPosition i_pos;
@@ -92,8 +91,11 @@ public class BlockControl : MonoBehaviour
             case Block.COLOR.magenta:
                 color_value = Color.magenta;
                 break;
-            case Block.COLOR.orange:
-                color_value = new Color(1.0f, 0.46f, 0.0f);
+            case Block.COLOR.cyan:
+                color_value = Color.cyan;
+                break;
+            case Block.COLOR.gray:
+                color_value = Color.gray;
                 break;
         }
         Renderer rd = GetComponent<Renderer>();

@@ -104,3 +104,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02c35e84faf8394d8652c9b0297b7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setting: {fileID: 0}
+  color: 0
+  block_root: {fileID: 0}
+  step: -1
+  next_step: -1
+  position_offset: {x: 0, y: 0, z: 0}
+  vanish_timer: -1
+  slide_dir: -1
+  step_timer: 0

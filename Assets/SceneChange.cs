@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
     private AudioSource click;
     public AudioClip sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +22,16 @@ public class SceneChange : MonoBehaviour
         
     }
 
-    public void MoveScene()
+    public void MoveScene(Button b)
     {
         click.Play();
-        SceneManager.LoadScene("SettingScene");
+        if (b.name == "Game Start!")
+        {
+            SceneManager.LoadScene("SettingScene");
+        }
+        else if (b.name == "Play!")
+        {
+            SceneManager.LoadScene("PlayScene");
+        }
     }
 }

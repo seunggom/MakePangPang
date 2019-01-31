@@ -42,7 +42,7 @@ public class BlockRoot : MonoBehaviour
                 block.SetColor((Block.COLOR)color_index);
                 block.name = "block(" + block.i_pos.x.ToString() + ", " + block.i_pos.y.ToString() + ")";
 
-                color_index = Random.Range(0, (int)Block.COLOR.NORMAL_COLOR_NUM);
+                color_index = Random.Range(0, SizeManager.colorNum);
             }
         }
     }

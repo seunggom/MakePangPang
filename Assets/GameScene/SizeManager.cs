@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SizeManager : MonoBehaviour
 {
-    private int mapSize;
+    public static int mapSize = 8;
+    public static int colorNum = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -25,16 +26,29 @@ public class SizeManager : MonoBehaviour
 
         switch (drop.name)
         {
-            case "MapSize":
-                mapSize = n;
+            case "Size":
+                mapSize = n + 8;
+                Debug.Log(mapSize);
                 break;
             case "ColorNum":
+                colorNum = n + 5;
+                Debug.Log(colorNum);
                 break;
         }
     }
 
-    public int getSize()
+    public int GetSize()
     {
         return (mapSize);
+    }
+
+    public int GetColorNum()
+    {
+        return (colorNum);
+    }
+
+    public void ChangeSetting()
+    {
+
     }
 }
