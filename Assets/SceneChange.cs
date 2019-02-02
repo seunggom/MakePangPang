@@ -33,5 +33,13 @@ public class SceneChange : MonoBehaviour
         {
             SceneManager.LoadScene("PlayScene");
         }
+        else if(b.name == "init")
+        {
+            SceneManager.LoadScene("StartScene");
+        }
+        else if(b.name == "exit")
+        {
+            Application.Quit();
+        }
     }
 }
