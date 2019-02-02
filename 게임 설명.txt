@@ -1,0 +1,18 @@
+* 게임 설명 *
+
+- 게임 이름 : 메이크 팡팡
+- 제작 : 김승연 (k_sy_3@naver.com)
+- 게임 종류 : 매치-3 게임
+- 원하는 블록 개수, 블록 색상 개수를 설정하여 게임을 시작할 수 있음
+- 60초 타임어택 
+- 삭제한 블록 개수 * 100 점을 획득할 수 있지만, 아무것도 안하고 있으면 1초 당 10점이 감점됨
+- 블록은 제한 없이 이동 가능 (3개 이상 매치가 안되어도 제자리로 돌아가지는 않음)
+
+- 사용한 에셋의 일부는 unity의 asset store에서 무료로 받은 것임
+- 배경에 쓰인 에셋 출처 : https://assetstore.unity.com/packages/2d/environments/free-2d-adventure-beach-background-82090
+- BGM 출처 : https://assetstore.unity.com/packages/audio/music/casual-game-bgm-5-135943
+- 버튼 클릭 시 효과음 출처 : https://github.com/gilbutITbook/006757/tree/master/sample_data_u5/sampleMaterials 에 있는 se_jump.wav 파일
+
+- 게임 알고리즘은 "반다이 남코 현역 디렉터가 알려주는 유니티 게임 제작 입문(아스나 고지)" 책 내용을 사용함
+
+- 제작 마무리 날짜 : 2019-02-02
